@@ -38,8 +38,8 @@ class SpringWebFluxApplicationTests {
                 .bindToRouterFunction(userRouter.findAllRouter(userHandler))
                 .build();
 
-        List<User> users = Arrays.asList(new User("Bobo","Vieri"),
-                new User("Filippo", "Inzaghi"));
+        List<User> users = Arrays.asList(new User("Mario","Rossi"),
+                new User("Filippo", "Bianchi"));
 
         Flux<User> flux = Flux.fromIterable(users);
         given(userMongoRepository.findAll())
