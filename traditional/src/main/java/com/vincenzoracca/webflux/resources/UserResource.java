@@ -47,9 +47,9 @@ public class UserResource {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void save(@PathVariable String id) {
-//        userMongoRepository.deleteById(id); //non funziona perchè non fa parte di una chain, quindi non è sottoscritto da nessun metodo
-        //nulla succede se non ti sottoscrive
+    public void delete(@PathVariable String id) {
+//        userMongoRepository.deleteById(id); //does not work because it is not part of a chain, so it is not subscribed by any method
+        //nothing happens if you don't subscribe
         userMongoRepository.deleteById(id).subscribe();
     }
 }
