@@ -32,3 +32,10 @@ Then, your endpoints are available on: `localhost:8080`
 
 You can run the main classes SpringWebFluxApplication (in functional submodule) or SpringWebfluxTraditional
 (in traditional submodule).
+
+### Article about this project:
+
+You can read my article about Spring WebFlux in my blog:
+
+- in English: https://www.vincenzoracca.com/en/blog/framework/spring/webflux/
+- in Italian: https://www.vincenzoracca.com/blog/framework/spring/webflux/
